@@ -1,0 +1,16 @@
+const Discord = require("Discord.js");
+const bot = new Discord.Client();
+
+const token = 'ODA3MTk4NTAwMDc2Mzg4NDIy.YB0gLw.8QL_RxgbEcgV36P8QfJY7oRUkcE';
+
+bot.on('ready', () =>{
+        console.log('This bot is online!');
+})
+
+bot.on('message', msg=>{
+    if(msg.content === 'we'){
+        msg.channel.send("Jack hates us");
+    }
+})
+
+bot.login(token);
